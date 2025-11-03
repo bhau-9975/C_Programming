@@ -1,0 +1,36 @@
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Print all numbers from 1 to N
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name   :   PrintNumbers
+//  Descrption      :   Prints numbers upto N
+//  Input           :   7
+//  Output          :   1   2   3   4   5   6   7
+//  Author          :   Bhau Soma Pise
+//  Date            :   26-10-2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void PrintNumbers(int iLimit)
+{
+    int iCnt = 0;
+
+    for (iCnt = 1; iCnt <= iLimit; iCnt++)
+    {
+        printf("%d\t", iCnt);
+    }
+}
+// Time Complexity : O(N)
+int main()
+{
+    int iValue = 0;
+    printf("Enter the number : ");
+    scanf("%d", &iValue);
+
+    PrintNumbers(iValue);
+}
